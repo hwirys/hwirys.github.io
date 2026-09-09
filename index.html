@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>쿠로네 언니의 저택 탈출</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      background: #070c10;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: none;
+    }
+    /* Flex centering on the parent — independent of Phaser's auto-margin
+       so the canvas stays centered immediately after viewport changes. */
+    #game-container {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      /* Use dynamic viewport units when available to avoid mobile address-bar drift. */
+      width: 100dvw;
+      height: 100dvh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+    /* Override Phaser's inline margin-left/top — flex handles centering. */
+    #game-container canvas {
+      display: block;
+      margin: 0 !important;
+      flex-shrink: 0;
+      cursor: default;
+    }
+    #game-container canvas:active {
+      cursor: pointer;
+    }
+    button { font: inherit; }
+    .reading-open #touch-controls, .reading-open #touch-hud { display: none; }
+    html.reading-open, body.reading-open { touch-action: pan-y; }
+    .reading-overlay {
+      position: fixed; inset: 0; z-index: 1100;
+      display: flex; align-items: center; justify-content: center;
+      padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+      background: rgba(3, 8, 12, .88); color: #ded7c7;
+      font: 16px/1.65 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      touch-action: pan-y;
+    }
+    .reading-sheet {
+      width: min(100%, 720px); max-height: 100%; overflow: hidden;
+      display: flex; flex-direction: column;
+      background: linear-gradient(125deg, #192229, #10191f);
+      border: 1px solid #7b7564; border-radius: 4px;
+      box-shadow: 0 22px 70px #000b;
+    }
+    .reading-sheet header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 12px 16px; border-bottom: 1px solid #435057;
+      flex-shrink: 0;
+    }
+    .reading-sheet h2 { font-size: 19px; font-weight: 600; line-height: 1.4; color: #d9c294; }
+    .reading-sheet h3 { font-size: 18px; line-height: 1.5; margin-bottom: 10px; }
+    .reading-sheet p { margin: 0 0 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .reading-content {
+      padding: 18px; overflow-y: auto; overscroll-behavior: contain;
+      min-height: 0; -webkit-overflow-scrolling: touch; touch-action: pan-y;
+    }
+    .reading-footer { padding: 0 16px 14px; flex-shrink: 0; }
+    .reading-footer:empty { display: none; }
+    .reading-sheet button {
+      min-width: 44px; min-height: 44px; padding: 9px 12px;
+      border: 1px solid #627079; border-radius: 3px;
+      background: #243139; color: #eee3cc; cursor: pointer;
+      font-size: 15px; line-height: 1.5; touch-action: manipulation;
+    }
+    .reading-sheet button:active, .reading-sheet button[aria-pressed="true"] { background: #4b5555; border-color: #c4a974; }
+    .reading-sheet button:focus-visible { outline: 2px solid #d0b67f; outline-offset: 2px; }
+    .reading-sheet .reading-close { flex-shrink: 0; font-size: 14px; }
+    .reading-muted { color: #a2afb4; font-size: 14px; }
+    .reading-paper {
+      padding: 18px; border-left: 3px solid #a99265;
+      color: #342e27; background: linear-gradient(100deg, #dbd1b9, #e9e0cd);
+      font-family: "Noto Serif KR", "Batang", serif;
+    }
+    .reading-paper p:last-child { margin-bottom: 0; }
+    .reading-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 18px; }
+    .reading-tabs button { text-align: left; }
+    .reading-evidence { padding: 12px 0; border-bottom: 1px solid #aca18b; }
+    .reading-evidence:last-child { border-bottom: 0; }
+    .reading-evidence strong { display: block; margin-bottom: 5px; }
+    .reading-options { display: grid; gap: 8px; margin-top: 14px; }
+    .reading-options button { text-align: left; }
+    .reading-feedback { color: #d8a194; padding-top: 12px; }
+    .reading-keypad { display: grid; grid-template-columns: repeat(6, minmax(44px, 1fr)); gap: 6px; margin-top: 14px; }
+    .reading-keypad button { padding: 6px; font-size: 18px; }
+    .reading-keypad-actions { display: flex; gap: 8px; margin-top: 12px; }
+    .reading-keypad-actions button { flex: 1; }
+    .reading-code { font: 26px/1.6 monospace; text-align: center; letter-spacing: 4px; padding: 10px; background: #0a1116; color: #dec995; border: 1px solid #5c655f; }
+    .reading-code-display { position: sticky; top: -18px; z-index: 1; background: #152027; padding: 4px 0; }
+    .reading-inventory { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 16px; }
+    .reading-inventory button { min-height: 64px; font-size: 14px; }
+    .reading-dialog { align-items: flex-end; background: rgba(3, 8, 12, .26); }
+    .reading-dialog .reading-sheet { max-height: 65%; }
+    .reading-dialog .reading-content { min-height: 86px; }
+    @media (max-height: 450px) {
+      .reading-code-display { position: static; }
+    }
+    @media (max-width: 350px) {
+      .reading-content { padding: 12px; }
+      .reading-keypad { grid-template-columns: repeat(5, minmax(44px, 1fr)); gap: 3px; }
+      .reading-tabs { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/main-BEBXN_sF.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
+</head>
+<body>
+  <div id="game-container"></div>
+</body>
+</html>

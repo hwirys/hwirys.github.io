@@ -1,0 +1,140 @@
+BGM License & Attribution Information
+======================================
+
+All tracks downloaded from OpenGameArt.org on 2026-04-12.
+
+
+=== TITLE SCREEN TRACKS ===
+
+1. title_ambient_horror.ogg
+   Track:   "Ambient Horror Track 01"
+   Author:  Cleyton Kauffman
+   License: CC0 (Public Domain)
+   Source:  https://opengameart.org/content/ambient-horror-track-01
+   Note:    48-second loop, dissonant strings, designed for title/menu screens
+   Credit:  Music by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman
+
+2. title_dark_ambiance.mp3
+   Track:   "Dark Ambiance (Mastered)"
+   Author:  Philippe Groarke (Socapex / tarfmagougou)
+   License: CC-BY-SA 3.0
+   Source:  https://opengameart.org/content/dark-ambiance
+   Note:    Atmospheric soundscape, tension buildup, dark/horror/suspense
+   Credit:  REQUIRED - "Dark Ambiance by Socapex"
+
+
+=== EXPLORATION TRACKS ===
+
+3. exploration_post_apocalyptic.ogg
+   Track:   "Post Apocalyptic Wastelands [Loop Ready]"
+   Author:  SubspaceAudio (Juhani Junkala)
+   License: CC0 (Public Domain)
+   Source:  https://opengameart.org/content/horror-atmosphere
+   Note:    5:23, sparse atmospheric, creepy background noises, seamless loop
+   Credit:  No attribution required (CC0)
+
+4. exploration_narrow_corridors.mp3
+   Track:   "Narrow Corridors"
+   Author:  TinyWorlds
+   License: CC0 (Public Domain)
+   Source:  https://opengameart.org/content/narrow-corridors
+   Note:    Suspense building piece for exploring lost places, ambient/dark/scary
+   Credit:  No attribution required (CC0)
+
+5. exploration_ps2_horror.mp3
+   Track:   "PS2 Horror / Mystery Ambient Theme"
+   Author:  Tarush Singhal
+   License: CC0 (Public Domain)
+   Source:  https://opengameart.org/content/ps2-horror-mystery-ambient-theme
+   Note:    Inspired by Silent Hill 2, foggy ambient feel
+   Credit:  No attribution required (CC0)
+
+6. dark_ambience_loop.ogg
+   Track:   "Dark Ambience Loop"
+   Author:  Iwan Gabovitch (qubodup)
+   License: CC-BY 3.0 / GPL 3.0 / GPL 2.0
+   Source:  https://opengameart.org/content/dark-ambience-loop
+   Note:    Dark background track for horror, chase or hiding situations
+   Credit:  REQUIRED - "Dark Ambience Loop by Iwan Gabovitch qubodup.net"
+
+
+=== CHASE TRACKS ===
+
+7. chase_death_at_my_heels.ogg
+   Track:   "Death At My Heels"
+   Author:  Patrick de Arteaga (Varon Kein)
+   License: CC-BY 3.0
+   Source:  https://opengameart.org/content/mc-death-at-my-heels
+   Note:    Intense horror/tension/chase/battle music
+   Credit:  REQUIRED - "Patrick de Arteaga - patrickdearteaga.com"
+
+8. chase_its_time_to_run.ogg
+   Track:   "It's Time To Run"
+   Author:  Patrick de Arteaga (Varon Kein)
+   License: CC-BY 3.0
+   Source:  https://opengameart.org/content/mc-its-time-to-run
+   Note:    Horror/fear/chase/survival/persecution theme
+   Credit:  REQUIRED - "Patrick de Arteaga - patrickdearteaga.com"
+
+
+=== ENDING TRACKS ===
+
+9. ending_melancholy_piano_1.ogg
+   Track:   "Melancholy Piano BGM" (Track 1)
+   Author:  syncopika
+   License: CC-BY 3.0
+   Source:  https://opengameart.org/content/melancholy-piano-bgm
+   Note:    Melancholic piano, sad/mysterious, made for visual novel
+   Credit:  REQUIRED - "syncopika"
+
+10. ending_melancholy_piano_2.ogg
+    Track:   "Melancholy Piano BGM" (Track 2)
+    Author:  syncopika
+    License: CC-BY 3.0
+    Source:  https://opengameart.org/content/melancholy-piano-bgm
+    Note:    Alternate melancholy piano track
+    Credit:  REQUIRED - "syncopika"
+
+
+=== LICENSE SUMMARY ===
+
+CC0 (Public Domain) - No attribution required, no restrictions:
+  - title_ambient_horror.ogg
+  - exploration_post_apocalyptic.ogg
+  - exploration_narrow_corridors.mp3
+  - exploration_ps2_horror.mp3
+
+CC-BY 3.0 - Attribution required, otherwise free to use:
+  - chase_death_at_my_heels.ogg (Patrick de Arteaga)
+  - chase_its_time_to_run.ogg (Patrick de Arteaga)
+  - ending_melancholy_piano_1.ogg (syncopika)
+  - ending_melancholy_piano_2.ogg (syncopika)
+  - dark_ambience_loop.ogg (Iwan Gabovitch)
+
+CC-BY-SA 3.0 - Attribution required + derivatives must use same license:
+  - title_dark_ambiance.mp3 (Socapex / Philippe Groarke)
+
+
+=== ADDITIONAL RESOURCES (NOT DOWNLOADED) ===
+
+Japanese Free Music Sites:
+
+1. Youfulca (formerly Wingless Seraph) - https://youfulca.com/category/music_assets/horror/
+   License: Free, editing allowed, no reporting required
+   Tracks: 8 horror BGM tracks including:
+   - "振り向いてはいけない" (Never Look Back) - chase scenes
+   - "呪忌" (Curse) - abandoned locations, supernatural dread
+   - "妖域" (Phantom Realm) - eerie, otherworldly
+   - "歪" (Distortion) - unsettling, non-human presence
+   - "奈落" (Abyss) - wrongness, impossible phenomena
+   - "衆怨" (Collective Resentment) - lingering spirits
+   - "死獄" (Death Prison) - escape sequences
+   Formats: MP3, OGG, WAV (OGG compatible with RPG Maker)
+
+2. Maou Damashii (魔王魂) - https://maou.audio/
+   License: Commercial OK, modifications OK, no permission/reporting required
+   Categories: Songs, BGM, Sound Effects, Retro Game Music
+
+3. Sound Effect Lab - https://soundeffect-lab.info
+   License: Free for commercial use, no credit required
+   Categories: Battle, Anime, Voice, Daily Life, Machinery, Environmental, UI, Nature
