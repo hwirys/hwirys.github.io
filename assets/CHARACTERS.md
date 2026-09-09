@@ -1,8 +1,8 @@
 # 캐릭터 아트와 외부 스프라이트 교체
 
-기본 캐릭터는 `explorer-atlas.png`(익명 탐색자), `presence-atlas.png`(정체불명의 형상)다.
-imagegen 내장 도구로 새로 만든 게임용 투명 아틀라스이며 실제 인물을 묘사하지 않는다.
-제작 프롬프트는 `docs/CHARACTER-ART.md`에 기록했다. 이 두 파일은 게임과 함께 배포한다.
+현재 캐릭터는 `explorer-atlas.png`의 익명 성인 준비자다. 추적자는 저택에 남은 같은 모습이므로 player 프레임을 공유하고 색과 행동으로 구분한다. 유리 너머의 살아 있는 준비자도 같은 대여 겉옷을 입는다.
+이 아틀라스는 앞선 작업에서 imagegen으로 제작했으며 실제 인물을 묘사하지 않는다. 이번 변경은 새 이미지 생성 없이 기존 프레임을 렌더링에서 공유한다.
+`presence-atlas.png`는 이전 누더기 형상 원본으로 보존하지만 현재 게임에서 요청하거나 사용하지 않는다. 제작 당시 프롬프트는 `docs/CHARACTER-ART.md`에 기록했다.
 
 사용자 소유 에셋으로 바꾸려면 아래 파일을 넣고 명시적으로 옵션을 켠다.
 외부 파일이 없으면 기본 아틀라스, 기본 아틀라스도 읽을 수 없을 때만 절차 생성 폴백을 사용한다.
@@ -12,7 +12,7 @@ imagegen 내장 도구로 새로 만든 게임용 투명 아틀라스이며 실�
 | 파일 | 용도 |
 |------|------|
 | `public/assets/char_player.png`  | 플레이어(반죽이) |
-| `public/assets/char_monster.png` | 몬스터(그림자) |
+| 추적자 | 플레이어 시트를 자동 공유하므로 별도 파일 불필요 |
 
 그리고 `src/config/constants.ts`에서 `USE_EXTERNAL_CHARACTER_SHEETS = true`로 바꾼 뒤
 `npm run dev` (또는 `build:web`)를 다시 실행하면 적용됩니다.
