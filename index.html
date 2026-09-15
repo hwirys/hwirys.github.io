@@ -9,7 +9,11 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>문 너머의 발소리 — 쿠로네 언니의 저택 탈출</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      -webkit-user-select: none; user-select: none;
+      -webkit-touch-callout: none;
+    }
     html, body {
       background: #070c10;
       overflow: hidden;
@@ -17,7 +21,17 @@
       height: 100%;
       -webkit-tap-highlight-color: transparent;
       touch-action: none;
+      overscroll-behavior: none;
     }
+    body { position: fixed; inset: 0; }
+    /* Keep future text-entry fields usable; game labels are never selectable. */
+    input, textarea, [contenteditable]:not([contenteditable="false"]),
+    [contenteditable]:not([contenteditable="false"]) * {
+      -webkit-user-select: text; user-select: text;
+      -webkit-touch-callout: default;
+    }
+    img, canvas { -webkit-user-drag: none; }
+    #game-container canvas, #touch-controls, #touch-controls * { touch-action: none; }
     /* Flex centering on the parent — independent of Phaser's auto-margin
        so the canvas stays centered immediately after viewport changes. */
     #game-container {
@@ -74,6 +88,7 @@
       padding: 18px; overflow-y: auto; overscroll-behavior: contain;
       min-height: 0; -webkit-overflow-scrolling: touch; touch-action: pan-y;
     }
+    #title-screen { overscroll-behavior: contain; }
     .reading-footer { padding: 0 16px 14px; flex-shrink: 0; }
     .reading-footer:empty { display: none; }
     .reading-sheet button {
@@ -120,7 +135,7 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-DQ2gg86G.js"></script>
+  <script type="module" crossorigin src="/assets/main-DkpoLYDI.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
 </head>
 <body>
