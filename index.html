@@ -7,7 +7,24 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>30번 손님 — 언니의 오리고기 파티</title>
+  <title>쿠로네 언니의 생일 파티에 초대합니다</title>
+  <meta name="description" content="10월 30일, 쿠로네 언니의 생일을 함께 축하해요. 반죽이들을 위한 특별한 초대장." />
+  <script>
+    // Apply the remembered cover before the engine and character art download.
+    // Read-only; the canonical state machine lives in InvitationMemory.ts.
+    try {
+      const memory = JSON.parse(localStorage.getItem('kurone_invitation_memory_v1') || 'null');
+      const ended = ['kurone_party_ending_archive', 'kurone_ending_archive'].some(key => {
+        try { const rows = JSON.parse(localStorage.getItem(key) || 'null');
+          return Array.isArray(rows) && rows.some(row => row && ['bad','normal','true','steward','reverie'].includes(row.id) && row.unlocked !== false);
+        } catch { return false; }
+      });
+      if (ended || (memory && memory.version === 1 && memory.stage === 3)) {
+        document.documentElement.dataset.endedInvitation = 'true';
+        document.title = '30번 손님 — 언니의 오리고기 파티';
+      }
+    } catch { /* Invitation still opens when storage is unavailable. */ }
+  </script>
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -59,6 +76,11 @@
       cursor: pointer;
     }
     button { font: inherit; }
+    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;gap:18px;text-align:center;background:radial-gradient(ellipse at 35% 35%,#fff9ec,#ffe4f0);color:#b36387;font:13px/1.8 'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+    #invitation-loading span{font:52px Georgia,serif;color:#c76592}
+    #invitation-loading small{font-size:10px;letter-spacing:.2em;color:#bd8a9f}
+    [data-ended-invitation="true"] #invitation-loading{background:#091316;color:#a5ac97}
+    [data-ended-invitation="true"] #invitation-loading span{color:#778b7b}
     .reading-open #touch-controls, .reading-open #touch-hud { display: none; }
     html.reading-open, body.reading-open { touch-action: pan-y; }
     .reading-overlay {
@@ -135,10 +157,11 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-DiJV589S.js"></script>
+  <script type="module" crossorigin src="/assets/main-DvS6voRD.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
 </head>
 <body>
   <div id="game-container"></div>
+  <div id="invitation-loading" role="status"><span aria-hidden="true">♡</span><p>초대장을 준비하고 있어요.</p><small>10.30 · HAPPY UNNIE DAY</small></div>
 </body>
 </html>
