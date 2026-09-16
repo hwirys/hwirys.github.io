@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preload" href="/fonts/gowun-dodum-korean.woff2" as="font" type="font/woff2" crossorigin />
   <title>쿠로네 언니의 생일 파티에 초대합니다</title>
   <meta name="description" content="10월 30일, 쿠로네 언니의 생일을 함께 축하해요. 반죽이들을 위한 특별한 초대장." />
   <script>
@@ -19,13 +20,15 @@
           return Array.isArray(rows) && rows.some(row => row && ['bad','normal','true','steward','reverie'].includes(row.id) && row.unlocked !== false);
         } catch { return false; }
       });
-      if (ended || (memory && memory.version === 1 && memory.stage === 3)) {
+      if (location.hash !== '#birthday' && (ended || (memory && memory.version === 1 && memory.stage === 3))) {
         document.documentElement.dataset.endedInvitation = 'true';
         document.title = '30번 손님 — 언니의 오리고기 파티';
       }
     } catch { /* Invitation still opens when storage is unavailable. */ }
   </script>
   <style>
+    @font-face { font-family:'Gowun Dodum'; src:url('/fonts/gowun-dodum-korean.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+    @font-face { font-family:'Gowun Batang'; src:url('/fonts/gowun-batang-invitation.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
     * {
       margin: 0; padding: 0; box-sizing: border-box;
       -webkit-user-select: none; user-select: none;
@@ -63,8 +66,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #000;
+      background: var(--party-surround, #000);
     }
+    [data-party-bright="true"] #touch-hud,
+    [data-party-bright="true"] #touch-hud > div:not(#threat-cue) { color:#493c37 !important; text-shadow:none !important; }
     /* Override Phaser's inline margin-left/top — flex handles centering. */
     #game-container canvas {
       display: block;
@@ -157,7 +162,7 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-DvS6voRD.js"></script>
+  <script type="module" crossorigin src="/assets/main-DT3F-_Qg.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
 </head>
 <body>
