@@ -15,12 +15,17 @@
     // Read-only; the canonical state machine lives in InvitationMemory.ts.
     try {
       const memory = JSON.parse(localStorage.getItem('kurone_invitation_memory_v1') || 'null');
+      let cozy = false;
+      try {
+        const appearance = JSON.parse(localStorage.getItem('kurone_invitation_appearance_v1') || 'null');
+        cozy = appearance?.version === 1 && appearance?.cozy === true;
+      } catch { /* Invalid preferences do not hide the remembered cover. */ }
       const ended = ['kurone_party_ending_archive', 'kurone_ending_archive'].some(key => {
         try { const rows = JSON.parse(localStorage.getItem(key) || 'null');
           return Array.isArray(rows) && rows.some(row => row && ['bad','normal','true','steward','reverie'].includes(row.id) && row.unlocked !== false);
         } catch { return false; }
       });
-      if (location.hash !== '#birthday' && (ended || (memory && memory.version === 1 && memory.stage === 3))) {
+      if (!cozy && location.hash !== '#birthday' && (ended || (memory && memory.version === 1 && memory.stage === 3))) {
         document.documentElement.dataset.endedInvitation = 'true';
         document.title = '30번 손님 — 언니의 오리고기 파티';
       }
@@ -162,7 +167,7 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-DT3F-_Qg.js"></script>
+  <script type="module" crossorigin src="/assets/main-DhGHe7BZ.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
 </head>
 <body>
