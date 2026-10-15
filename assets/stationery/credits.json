@@ -1,0 +1,66 @@
+[
+  {
+    "file": "birthday-envelope.webp",
+    "source": "OpenAI built-in image_gen",
+    "generated": "2026-10-15",
+    "prompt": "GENERATION.md",
+    "reference": null,
+    "original": "exec-00d12eb9-a63f-4405-b496-d9b8147351dd.png",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "alpha": true,
+    "changes": "Proportional resize and WebP encoding. Artwork not redrawn or recolored.",
+    "sha256": "2cbe06b8ffa6e47fb6918f33b12ad0323198ad8c96178caf5877c949caf6d64e",
+    "active": true
+  },
+  {
+    "file": "birthday-cake.webp",
+    "source": "OpenAI built-in image_gen",
+    "generated": "2026-10-15",
+    "prompt": "GENERATION.md",
+    "reference": "birthday-envelope.webp",
+    "original": "exec-9c85038a-43ec-46b0-9bcb-a3fbcf619378.png",
+    "dimensions": [
+      960,
+      960
+    ],
+    "alpha": true,
+    "changes": "Proportional resize and WebP encoding. Artwork not redrawn or recolored.",
+    "sha256": "60a2e19230df5d57b808ab3a0930ff69984aea18ac16f04bc0eb49db612462b1",
+    "active": true
+  },
+  {
+    "file": "aged-birthday-envelope.webp",
+    "source": "OpenAI built-in image_gen",
+    "generated": "2026-10-15",
+    "prompt": "GENERATION.md",
+    "reference": "birthday-envelope.webp",
+    "original": "exec-cd0e1599-b4bd-4fc0-bd0d-33fff5cf2477.png",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "alpha": true,
+    "changes": "Proportional resize and WebP encoding. Artwork not redrawn or recolored.",
+    "sha256": "a71359c099fa510f06763c11c97ede62a058ab64a8f450d3e95cc27142ee4adf",
+    "active": true
+  },
+  {
+    "file": "aged-letter-paper.webp",
+    "source": "OpenAI built-in image_gen",
+    "generated": "2026-10-15",
+    "prompt": "GENERATION.md",
+    "reference": null,
+    "original": "exec-6bd770ef-f7b1-4427-93bc-5116d4c9fc9a.png",
+    "dimensions": [
+      900,
+      1200
+    ],
+    "alpha": false,
+    "changes": "Proportional resize and WebP encoding. Artwork not redrawn or recolored.",
+    "sha256": "4f4df73f3c551b6ede31e58b46894696252a0e0b014ece25e974c54c0966b563",
+    "active": true
+  }
+]

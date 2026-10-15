@@ -1,0 +1,4 @@
+Current illustrations were generated for this project using the built-in OpenAI image_gen tool on 2026-10-15, as requested by the user.
+These are generated illustrations, not externally authored stock artwork.
+See GENERATION.md for every prompt and credits.json for references, dimensions and hashes.
+The prior Mediamodifier artwork and its license are archived in docs/design-history/external-stationery-2026-10-15 and are not included in the current app.

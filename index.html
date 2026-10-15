@@ -6,8 +6,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preload" as="image" href="/assets/stationery/birthday-envelope.webp" />
   <link rel="preload" href="/fonts/gowun-dodum-korean.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/pretendard-variable.woff2" as="font" type="font/woff2" crossorigin />
   <title>쿠로네 언니의 생일 파티에 초대합니다</title>
   <meta name="description" content="10월 30일, 쿠로네 언니의 생일을 함께 축하해요. 반죽이들을 위한 특별한 초대장." />
   <script>
@@ -25,6 +27,17 @@
           return Array.isArray(rows) && rows.some(row => row && ['bad','normal','true','steward','reverie'].includes(row.id) && row.unlocked !== false);
         } catch { return false; }
       });
+      let paperStage = memory?.version === 1 && [0,1,2,3].includes(memory.stage) ? memory.stage : 0;
+      for (const slot of ['auto', 'slot1', 'slot2', 'slot3']) {
+        try {
+          const save = JSON.parse(localStorage.getItem('kurone_save_' + slot) || 'null');
+          const room = save?.player?.currentRoomId;
+          if (typeof room === 'string') paperStage = Math.max(paperStage, /^(basement_|lab_|wine_cellar|servant_room|utility_room|clock_tower|sealed_room)/.test(room) ? 2 : 1);
+        } catch { /* A malformed slot must not hide the other saved visits. */ }
+      }
+      if (!cozy && location.hash !== '#birthday' && !ended && paperStage > 0 && paperStage < 3) {
+        document.documentElement.dataset.invitationPaper = 'aged';
+      }
       if (!cozy && location.hash !== '#birthday' && (ended || (memory && memory.version === 1 && memory.stage === 3))) {
         document.documentElement.dataset.endedInvitation = 'true';
         document.title = '30번 손님 — 언니의 오리고기 파티';
@@ -32,6 +45,7 @@
     } catch { /* Invitation still opens when storage is unavailable. */ }
   </script>
   <style>
+    @font-face { font-family:'Pretendard Variable'; src:url('/fonts/pretendard-variable.woff2') format('woff2'); font-weight:45 920; font-style:normal; font-display:swap; }
     @font-face { font-family:'Gowun Dodum'; src:url('/fonts/gowun-dodum-korean.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
     @font-face { font-family:'Gowun Batang'; src:url('/fonts/gowun-batang-invitation-v2.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
     * {
@@ -86,11 +100,13 @@
       cursor: pointer;
     }
     button { font: inherit; }
-    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;gap:18px;text-align:center;background:radial-gradient(ellipse at 35% 35%,#fff9ec,#ffe4f0);color:#b36387;font:13px/1.8 'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
-    #invitation-loading span{font:52px Georgia,serif;color:#c76592}
-    #invitation-loading small{font-size:10px;letter-spacing:.2em;color:#bd8a9f}
+    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;justify-items:center;gap:18px;text-align:center;background:#fff9f2;color:#806962;font:14px/1.8 'Gowun Dodum','Apple SD Gothic Neo',sans-serif}
+    #invitation-loading img{width:140px;height:140px;object-fit:contain}
+    #invitation-loading small{font-size:12px;font-weight:400;letter-spacing:.03em;color:#8d505d}
+    [data-invitation-paper="aged"] #invitation-loading{background:#f2eada url('/assets/stationery/aged-letter-paper.webp') center/cover;color:#665441}
+    [data-invitation-paper="aged"] #invitation-loading img{filter:sepia(.3) saturate(.6)}
     [data-ended-invitation="true"] #invitation-loading{background:#091316;color:#a5ac97}
-    [data-ended-invitation="true"] #invitation-loading span{color:#778b7b}
+    [data-ended-invitation="true"] #invitation-loading img{filter:grayscale(1) brightness(.6)}
     .reading-open #touch-controls, .reading-open #touch-hud { display: none; }
     html.reading-open, body.reading-open { touch-action: pan-y; }
     .reading-overlay {
@@ -98,22 +114,22 @@
       display: flex; align-items: center; justify-content: center;
       padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
       background: rgba(3, 8, 12, .88); color: #ded7c7;
-      font: 16px/1.65 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      font: 16px/1.65 "Gowun Dodum", "Apple SD Gothic Neo", sans-serif;
       touch-action: pan-y;
     }
     .reading-sheet {
       width: min(100%, 720px); max-height: 100%; overflow: hidden;
       display: flex; flex-direction: column;
-      background: linear-gradient(125deg, #192229, #10191f);
-      border: 1px solid #7b7564; border-radius: 4px;
+      background: linear-gradient(125deg, #243029, #15211c);
+      border: 1px solid #73786a; border-radius: 4px;
       box-shadow: 0 22px 70px #000b;
     }
     .reading-sheet header {
       display: flex; align-items: center; justify-content: space-between;
-      gap: 12px; padding: 12px 16px; border-bottom: 1px solid #435057;
+      gap: 12px; padding: 12px 16px; border-bottom: 1px solid #49584b;
       flex-shrink: 0;
     }
-    .reading-sheet h2 { font-size: 19px; font-weight: 600; line-height: 1.4; color: #d9c294; }
+    .reading-sheet h2 { font-size: 19px; font-weight: 600; line-height: 1.4; color: #d9c294; word-break: keep-all; overflow-wrap: anywhere; }
     .reading-sheet h3 { font-size: 18px; line-height: 1.5; margin-bottom: 10px; }
     .reading-sheet p { margin: 0 0 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
     .reading-content {
@@ -125,18 +141,18 @@
     .reading-footer:empty { display: none; }
     .reading-sheet button {
       min-width: 44px; min-height: 44px; padding: 9px 12px;
-      border: 1px solid #627079; border-radius: 3px;
-      background: #243139; color: #eee3cc; cursor: pointer;
-      font-size: 15px; line-height: 1.5; touch-action: manipulation;
+      border: 1px solid #667461; border-radius: 3px;
+      background: #2d3b32; color: #eee3cc; cursor: pointer;
+      font-family: inherit; font-size: 15px; line-height: 1.5; touch-action: manipulation;
     }
-    .reading-sheet button:active, .reading-sheet button[aria-pressed="true"] { background: #4b5555; border-color: #c4a974; }
+    .reading-sheet button:active, .reading-sheet button[aria-pressed="true"] { background: #45503d; border-color: #c4a974; }
     .reading-sheet button:focus-visible { outline: 2px solid #d0b67f; outline-offset: 2px; }
     .reading-sheet .reading-close { flex-shrink: 0; font-size: 14px; }
-    .reading-muted { color: #a2afb4; font-size: 14px; }
+    .reading-muted { color: #b4bdac; font-size: 14px; }
     .reading-paper {
       padding: 18px; border-left: 3px solid #a99265;
       color: #342e27; background: linear-gradient(100deg, #dbd1b9, #e9e0cd);
-      font-family: "Noto Serif KR", "Batang", serif;
+      font-family: "Gowun Dodum", "Apple SD Gothic Neo", sans-serif;
     }
     .reading-paper p:last-child { margin-bottom: 0; }
     .reading-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 18px; }
@@ -146,6 +162,18 @@
     .reading-evidence strong { display: block; margin-bottom: 5px; }
     .reading-options { display: grid; gap: 8px; margin-top: 14px; }
     .reading-options button { text-align: left; }
+    [data-panel="pause"] .reading-sheet { max-width: 440px; }
+    [data-panel="pause"] .reading-options { margin-top: 0; }
+    [data-panel="case-board"] .reading-content { display: grid; gap: 16px; align-content: start; }
+    [data-panel="case-board"] .notebook-action { justify-self: start; }
+    [data-panel="case-board"] .reading-evidence { padding: 16px 0; }
+    [data-panel="case-board"] .reading-evidence:first-child { padding-top: 0; }
+    [data-panel="case-board"] .reading-evidence:last-child { padding-bottom: 0; }
+    [data-panel="archive"] .reading-footer { display: flex; flex-wrap: wrap; gap: 8px; }
+    [data-panel="settings"] .reading-content h3:not(:first-child) { margin-top: 22px; }
+    .reading-setting { display: grid; grid-template-columns: minmax(0, 1fr) 44px 44px; gap: 8px; align-items: center; padding: 12px 0; border-bottom: 1px solid #49584b; }
+    .reading-setting[data-setting="interaction_hints"] { grid-template-columns: minmax(0, 1fr) auto; }
+    .reading-setting .reading-muted { margin-top: 4px; }
     .reading-feedback { color: #d8a194; padding-top: 12px; }
     .reading-keypad { display: grid; grid-template-columns: repeat(6, minmax(44px, 1fr)); gap: 6px; margin-top: 14px; }
     .reading-keypad button { padding: 6px; font-size: 18px; }
@@ -153,8 +181,21 @@
     .reading-keypad-actions button { flex: 1; }
     .reading-code { font: 26px/1.6 monospace; text-align: center; letter-spacing: 4px; padding: 10px; background: #0a1116; color: #dec995; border: 1px solid #5c655f; }
     .reading-code-display { position: sticky; top: -18px; z-index: 1; background: #152027; padding: 4px 0; }
-    .reading-inventory { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 16px; }
-    .reading-inventory button { min-height: 64px; font-size: 14px; }
+    .reading-inventory { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 16px; }
+    .reading-inventory button { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:5px; min-height:116px; padding:8px 5px; font-size:14px; }
+    .inventory-icon { display:block; width:72px; height:72px; max-width:100%; object-fit:contain; filter:drop-shadow(0 3px 4px #0004); }
+    .inventory-name { overflow-wrap:anywhere; word-break:keep-all; }
+    .inventory-detail { display:flex; align-items:flex-start; gap:16px; }
+    .inventory-preview { width:112px; height:112px; object-fit:contain; flex-shrink:0; background:#283b3220; border-radius:4px; }
+    .inventory-detail h3 { margin-top:0; }
+    .reading-content p { word-break:keep-all; overflow-wrap:anywhere; }
+    @media(max-width:520px) {
+      .reading-inventory { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .inventory-icon { width:64px; height:64px; }
+      .inventory-detail { gap:10px; padding:12px; }
+      .inventory-preview { width:72px; height:72px; }
+    }
+    @media(max-width:359px) { .reading-inventory { grid-template-columns:repeat(2,minmax(0,1fr)); } }
     .reading-dialog { align-items: flex-end; background: rgba(3, 8, 12, .26); }
     .reading-dialog .reading-sheet { max-height: 65%; }
     .reading-dialog .reading-content { min-height: 86px; }
@@ -167,12 +208,12 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-DQB3E_fT.js"></script>
+  <script type="module" crossorigin src="/assets/main-CXtNCcf7.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-CCoM_XoM.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-s1Dn_KII.css">
 </head>
 <body>
   <div id="game-container"></div>
-  <div id="invitation-loading" role="status"><span aria-hidden="true">♡</span><p>초대장을 준비하고 있어요.</p><small>10.30 · HAPPY UNNIE DAY</small></div>
+  <div id="invitation-loading" role="status"><img src="/assets/stationery/birthday-cake.webp" alt="" width="140" height="140"><p>초대장을 준비하고 있어요.</p><small>10월 30일, 언니의 생일에</small></div>
 </body>
 </html>

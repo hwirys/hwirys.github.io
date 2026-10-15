@@ -1,5 +1,9 @@
 # Birthday typography
 
+The current invitation and public birthday page use **Gowun Dodum** for their rounded, gentle headings and the unmodified **Pretendard Variable v1.3.9**, by Kil Hyung-jin, for readable body text and controls. The local `pretendard-variable.woff2` provides all weights and Korean glyphs without a runtime CDN request. Original source: https://github.com/orioncactus/pretendard/tree/v1.3.9/packages/pretendard/dist/web/variable/woff2 ; SIL OFL 1.1 is included as `Pretendard-OFL.txt`.
+
+The following Gowun fonts are also available for in-game reading panels and earlier designs.
+
 Self-hosted WOFF2, generated from Google Fonts' official source distribution:
 
 - Gowun Dodum Regular: https://github.com/google/fonts/tree/main/ofl/gowundodum
