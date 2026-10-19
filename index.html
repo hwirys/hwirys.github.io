@@ -92,8 +92,11 @@
     #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;justify-items:center;gap:18px;text-align:center;background:#fffdf8;color:#806962;font:14px/1.8 'Gowun Dodum','Apple SD Gothic Neo',sans-serif}
     #invitation-loading img{width:140px;height:140px;object-fit:contain}
     #invitation-loading small{font-size:12px;font-weight:400;letter-spacing:.03em;color:#8d505d}
-    [data-ended-invitation="true"] #invitation-loading{background:#091316;color:#a5ac97}
-    [data-ended-invitation="true"] #invitation-loading img{filter:grayscale(1) brightness(.6)}
+    #invitation-loading .ended-loading{display:none}
+    [data-ended-invitation="true"] #invitation-loading{background:linear-gradient(#050a0f88,#050a0fcc),url('/assets/authored/mansion-entrance-night.webp') center/cover #091316;color:#d6d9ca}
+    [data-ended-invitation="true"] #invitation-loading .birthday-loading{display:none}
+    [data-ended-invitation="true"] #invitation-loading .ended-loading{display:block}
+    [data-ended-invitation="true"] #invitation-loading small{color:#a9b7b1}
     .reading-open #touch-controls, .reading-open #touch-hud { display: none; }
     html.reading-open, body.reading-open { touch-action: pan-y; }
     .reading-overlay {
@@ -170,7 +173,7 @@
     .reading-code-display { position: sticky; top: -18px; z-index: 1; background: #152027; padding: 4px 0; }
     .reading-inventory { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 16px; }
     .reading-inventory button { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:5px; min-height:116px; padding:8px 5px; font-size:14px; }
-    .inventory-icon { display:block; width:72px; height:72px; max-width:100%; object-fit:contain; filter:drop-shadow(0 3px 4px #0004); }
+    .inventory-icon { display:block; width:72px; height:72px; max-width:100%; object-fit:contain; }
     .inventory-name { overflow-wrap:anywhere; word-break:keep-all; }
     .inventory-detail { display:flex; align-items:flex-start; gap:16px; }
     .inventory-preview { width:112px; height:112px; object-fit:contain; flex-shrink:0; background:#283b3220; border-radius:4px; }
@@ -195,12 +198,12 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-Cb7x5Dd2.js"></script>
+  <script type="module" crossorigin src="/assets/main-CMMyxs4S.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-DZnCLVZi.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-h2EQlNB5.css">
 </head>
 <body>
   <div id="game-container"></div>
-  <div id="invitation-loading" role="status"><img src="/assets/stationery/cake-line-v2.webp" alt="" width="140" height="140"><p>초대장을 준비하고 있어요.</p><small>10월 30일, 언니의 생일에</small></div>
+  <div id="invitation-loading" role="status"><img class="birthday-loading" src="/assets/stationery/cake-line-v2.webp" alt="" width="140" height="140"><p class="birthday-loading">초대장을 준비하고 있어요.</p><small class="birthday-loading">10월 30일, 언니의 생일에</small><p class="ended-loading">저택으로 돌아가는 중</p><small class="ended-loading">저장된 기록을 준비하고 있습니다.</small></div>
 </body>
 </html>
