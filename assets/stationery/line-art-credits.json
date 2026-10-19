@@ -1,0 +1,35 @@
+[
+  {
+    "file": "envelope-line-v2.webp",
+    "generator": "built-in image_gen",
+    "source": "exec-0d35aae0-8281-431a-8dae-4eb4dbc1db43.png",
+    "size": [
+      768,
+      768
+    ],
+    "bytes": 49750,
+    "sha256": "b793e851f3b71e5fe50dd28aef34ef654a268a3db0c62358de4fb91e78a7c6d8"
+  },
+  {
+    "file": "cake-line-v2.webp",
+    "generator": "built-in image_gen",
+    "source": "exec-ae6531b8-5cf3-41b2-9ee6-560f2df9f176.png",
+    "size": [
+      768,
+      768
+    ],
+    "bytes": 63958,
+    "sha256": "f91caa017825c42f12ee8ea2362372daaaebaec17d61df9c6712f218caa11897"
+  },
+  {
+    "file": "door-line-v2.webp",
+    "generator": "built-in image_gen",
+    "source": "exec-9d5d2c90-a07b-4795-9009-f2a9994a63d5.png",
+    "size": [
+      768,
+      768
+    ],
+    "bytes": 58460,
+    "sha256": "e5e6693e134115c75af6e561430b2ef4f0b02561af76ee121a4eebbcd0b65773"
+  }
+]

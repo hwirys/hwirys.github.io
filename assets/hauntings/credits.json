@@ -1,0 +1,13 @@
+{
+  "source": "Built-in image_gen; original generated then edited for flat painted materials",
+  "date": "2026-10-19",
+  "asset": "cloth-doll-v1.webp",
+  "dimensions": [
+    256,
+    384
+  ],
+  "transparent": true,
+  "sha256": "6f1b22dddf1546cd66bc5cc15a51430b4909c5ed6cb85826ffdc7ceded90fa28",
+  "bytes": 38670,
+  "conversion": "WebP resize only; generated alpha preserved; no vector redraw"
+}

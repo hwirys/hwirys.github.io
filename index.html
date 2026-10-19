@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="preload" as="image" href="/assets/stationery/birthday-envelope.webp" />
+  <link rel="preload" as="image" href="/assets/stationery/envelope-line-v2.webp" />
   <link rel="preload" href="/fonts/gowun-dodum-korean.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/pretendard-variable.woff2" as="font" type="font/woff2" crossorigin />
   <title>쿠로네 언니의 생일 파티에 초대합니다</title>
@@ -27,17 +27,6 @@
           return Array.isArray(rows) && rows.some(row => row && ['bad','normal','true','steward','reverie'].includes(row.id) && row.unlocked !== false);
         } catch { return false; }
       });
-      let paperStage = memory?.version === 1 && [0,1,2,3].includes(memory.stage) ? memory.stage : 0;
-      for (const slot of ['auto', 'slot1', 'slot2', 'slot3']) {
-        try {
-          const save = JSON.parse(localStorage.getItem('kurone_save_' + slot) || 'null');
-          const room = save?.player?.currentRoomId;
-          if (typeof room === 'string') paperStage = Math.max(paperStage, /^(basement_|lab_|wine_cellar|servant_room|utility_room|clock_tower|sealed_room)/.test(room) ? 2 : 1);
-        } catch { /* A malformed slot must not hide the other saved visits. */ }
-      }
-      if (!cozy && location.hash !== '#birthday' && !ended && paperStage > 0 && paperStage < 3) {
-        document.documentElement.dataset.invitationPaper = 'aged';
-      }
       if (!cozy && location.hash !== '#birthday' && (ended || (memory && memory.version === 1 && memory.stage === 3))) {
         document.documentElement.dataset.endedInvitation = 'true';
         document.title = '30번 손님 — 언니의 오리고기 파티';
@@ -100,11 +89,9 @@
       cursor: pointer;
     }
     button { font: inherit; }
-    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;justify-items:center;gap:18px;text-align:center;background:#fff9f2;color:#806962;font:14px/1.8 'Gowun Dodum','Apple SD Gothic Neo',sans-serif}
+    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;justify-items:center;gap:18px;text-align:center;background:#fffdf8;color:#806962;font:14px/1.8 'Gowun Dodum','Apple SD Gothic Neo',sans-serif}
     #invitation-loading img{width:140px;height:140px;object-fit:contain}
     #invitation-loading small{font-size:12px;font-weight:400;letter-spacing:.03em;color:#8d505d}
-    [data-invitation-paper="aged"] #invitation-loading{background:#f2eada url('/assets/stationery/aged-letter-paper.webp') center/cover;color:#665441}
-    [data-invitation-paper="aged"] #invitation-loading img{filter:sepia(.3) saturate(.6)}
     [data-ended-invitation="true"] #invitation-loading{background:#091316;color:#a5ac97}
     [data-ended-invitation="true"] #invitation-loading img{filter:grayscale(1) brightness(.6)}
     .reading-open #touch-controls, .reading-open #touch-hud { display: none; }
@@ -208,12 +195,12 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-CXtNCcf7.js"></script>
+  <script type="module" crossorigin src="/assets/main-CJhnzOnd.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-s1Dn_KII.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-DZnCLVZi.css">
 </head>
 <body>
   <div id="game-container"></div>
-  <div id="invitation-loading" role="status"><img src="/assets/stationery/birthday-cake.webp" alt="" width="140" height="140"><p>초대장을 준비하고 있어요.</p><small>10월 30일, 언니의 생일에</small></div>
+  <div id="invitation-loading" role="status"><img src="/assets/stationery/cake-line-v2.webp" alt="" width="140" height="140"><p>초대장을 준비하고 있어요.</p><small>10월 30일, 언니의 생일에</small></div>
 </body>
 </html>
