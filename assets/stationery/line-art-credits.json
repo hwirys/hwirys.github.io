@@ -31,5 +31,44 @@
     ],
     "bytes": 58460,
     "sha256": "e5e6693e134115c75af6e561430b2ef4f0b02561af76ee121a4eebbcd0b65773"
+  },
+  {
+    "file": "envelope-ginger-v3.png",
+    "generator": "built-in image_gen",
+    "source": "exec-d1a79677-39d3-4fba-826d-2dcb76bec71b.png",
+    "editOf": "envelope-line-v2.webp",
+    "changes": "Pastel ginger tabby fur and stripes; original flat linework, envelope and transparent background retained. No 3D styling.",
+    "size": [
+      1280,
+      1280
+    ],
+    "bytes": 729600,
+    "sha256": "2cf2eac1a5afb7840babf62d288f0df741c5fcaf67cfc600b71226341217ca7e"
+  },
+  {
+    "file": "cake-ginger-v3.png",
+    "generator": "built-in image_gen",
+    "source": "exec-ba1c171e-0181-4eed-8ee5-2a807bf8509e.png",
+    "editOf": "cake-line-v2.webp",
+    "changes": "Only the cat fur changed to pastel yellow ginger tabby; flat pen lines, original objects and transparent background retained.",
+    "size": [
+      1280,
+      1280
+    ],
+    "bytes": 616620,
+    "sha256": "8676d3338bc900d621ff565f279a00320c661e00f0743a08f1010facd93dbabe"
+  },
+  {
+    "file": "door-ginger-v3.png",
+    "generator": "built-in image_gen",
+    "source": "exec-4f8ab7c8-7a44-43c0-85db-3a055857ebb7.png",
+    "editOf": "door-line-v2.webp",
+    "changes": "Only the cat fur changed to pastel yellow ginger tabby; flat pen lines, original objects and transparent background retained.",
+    "size": [
+      1280,
+      1280
+    ],
+    "bytes": 627044,
+    "sha256": "a889de75357ed70a116795ce07ae8844ab61074fd2d64355eb15c03c103bf598"
   }
 ]

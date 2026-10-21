@@ -19,3 +19,8 @@ Use case: illustration-story. A tiny, charming hand drawn birthday website illus
 Use case: illustration-story. A tiny, charming hand drawn birthday website illustration. Simple slightly wobbly thin warm charcoal pen contour, very few lines, childlike original doodle, flat 2D. Small pale blush pink and butter yellow accents only. Generous empty transparent space. No lettering, no shadows, no gradients, no texture, no paper background, no 3D, no glossy surfaces, no stickers, no border, no scattered confetti or filler decoration. Center one subject on a square transparent canvas, fully visible, taking up about 75 percent of the width. Subject: a curious little white kitten seen from behind, tail curved, beside a small doorway opened a crack. Minimal pen drawing of a door, a single pale pink party ribbon tied to its little round knob. Gentle inviting birthday party mood, not scary. No scene, no floor, no perspective rendering. Door and cat only.
 
 Sizes, generation source filenames and SHA-256: `line-art-credits.json`.
+
+
+2026-10-21: envelope-ginger-v3.png is a built-in image_gen edit of envelope-line-v2.webp: warm pastel ginger tabby with orange stripes, cream muzzle and pink cheeks/paws. Flat dark-brown pen lines, white envelope and transparent alpha retained; no 3D. Original tool output preserved at 1280×1280 without postprocessing.
+
+The cake and door companions also use built-in image_gen edits (cake-ginger-v3.png / door-ginger-v3.png). Original 1280×1280 transparent outputs retained without postprocessing. All three birthday cats share warm yellow coats and orange tabby stripes. See line-art-credits.json for source output identifiers and hashes.

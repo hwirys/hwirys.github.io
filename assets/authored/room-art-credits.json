@@ -28,6 +28,63 @@
       "file": "pursuer/clint-zombie.png",
       "bytes": 720677,
       "sha256": "48f2c46e6da361837ae311b68191d31a8784d681dd4497bdb69b31f6dbb068f2"
+    },
+    {
+      "file": "interiors/CREDITS-container.txt",
+      "bytes": 2677,
+      "sha256": "3eef40fe2fa5dcffd4ecea84c597461c90265477d70d0331623a376dffa84d9b"
+    },
+    {
+      "file": "interiors/CREDITS-decorations-medieval.txt",
+      "bytes": 2756,
+      "sha256": "cffabdd4143c5c31a9186eb382696f2faff154e9d9926847eb186c93f83ff2d8"
+    },
+    {
+      "file": "interiors/CREDITS-furniture.txt",
+      "bytes": 1556,
+      "sha256": "4ac333f4da37b17a97a9f233429416eed86ad8e4218b559f361977ea80e11a82"
+    },
+    {
+      "file": "interiors/bedclothes.png",
+      "bytes": 8282,
+      "sha256": "32c5b3d7a7f3cadcd9c8bffcff5348e56d19cd6eda8bc5932d78f05b18cd1f60"
+    },
+    {
+      "file": "interiors/containers.png",
+      "bytes": 119437,
+      "sha256": "cb8a60d1eac758f87785e0168370ad772fe57e0c2e6f76a127833c63d33fed03"
+    },
+    {
+      "file": "interiors/dark-wood.png",
+      "bytes": 54375,
+      "sha256": "04c47b995e6c768ef83f26333869de7c5e486cfb951179acd856a39f8115e113"
+    },
+    {
+      "file": "interiors/decorations-medieval.png",
+      "bytes": 153702,
+      "sha256": "b3702f06722a8d7fa60f34afb340c5d392a2974a3746a8d3dcb1494d6bf90f55"
     }
-  ]
+  ],
+  "interiors": {
+    "furniture": {
+      "authors": "bluecarrot16, Baŝto, Lanea Zimmerman (Sharm), William Thompson, Tuomo Untinen (Reemax), Janna (Lilius/Jannax), Guido Bos; complete upstream notices in interiors/CREDITS-furniture.txt",
+      "source": "https://opengameart.org/content/lpc-wooden-furniture",
+      "license": "CC BY-SA 4.0 (including CC BY-SA 3.0 upstream contributions)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "containers": {
+      "authors": "bluecarrot16 and contributors; complete attribution in interiors/CREDITS-container.txt",
+      "source": "https://opengameart.org/content/lpc-containers",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "changes": "Original PNGs unchanged. Runtime frame selection, table middle-section repetition, scaling, muted material lighting, and rearrangement on existing fixture footprints. These visual adaptations are distributed under CC BY-SA 4.0. Jetrel props (CC0) and game-icons raster clues (CC BY 3.0, existing credits) are also used. The under-linen arm is a crop of the existing Clint Bellanger guest sheet (CC BY 3.0).",
+    "decorations": {
+      "authors": "bluecarrot16, Lanea Zimmerman (Sharm), Curt, Casper Nilsson and contributing authors; full upstream notices in interiors/CREDITS-decorations-medieval.txt",
+      "source": "https://opengameart.org/content/lpc-medieval-village-decorations",
+      "license": "CC BY-SA 4.0 (CC BY-SA 3.0 upstream contributions)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "White fabric flag frame selected, scaled, and typeset into a birthday letter garland. Original sheet unchanged."
+    }
+  }
 }
