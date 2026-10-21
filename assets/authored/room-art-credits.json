@@ -213,6 +213,8 @@
       "Stephen Challener (Redshrike)",
       "BlueCarrot16"
     ],
-    "changes": "Original layers unchanged. Runtime composition, cardinal row selection, eight walking frames and one idle per direction, uniform scale and shared foot anchor."
+    "changes": "Original layers unchanged. Runtime composition, cardinal row selection, eight walking frames and one idle per direction, uniform scale and shared foot anchor.",
+    "active": false,
+    "retired": "2026-10-22 — player and companion restored to explorer-walk-v2.png / party-guest-v1.png at user request. Original LPC assets and credits retained for history; no runtime requests."
   }
 }
