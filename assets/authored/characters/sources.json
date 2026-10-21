@@ -1,0 +1,135 @@
+{
+  "title": "LPC Revised \u2014 Character Basics",
+  "source": "https://opengameart.org/content/lpc-revised-character-basics",
+  "repository": "https://github.com/ElizaWy/LPC",
+  "commit": "f07f7f5892e67c932c68f70bb04472f2c64e46bc",
+  "license": "OGA-BY-3.0",
+  "files": [
+    {
+      "file": "characters/body-idle.png",
+      "upstream": "Characters/Body/Body 01 - Feminine, Thin/Peach/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Body/Body%2001%20-%20Feminine%2C%20Thin/Peach/Idle.png",
+      "sha256": "3223e57fdfdcd502d1123cf4bb3dd3352afe795dc731f41d7bf2fb6dfd931904"
+    },
+    {
+      "file": "characters/body-walk.png",
+      "upstream": "Characters/Body/Body 01 - Feminine, Thin/Peach/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Body/Body%2001%20-%20Feminine%2C%20Thin/Peach/Walk.png",
+      "sha256": "10f657f0fc0c3f54a4edd75576492d9880415c3e582bb6d893105f6fb00ed47b"
+    },
+    {
+      "file": "characters/head-idle.png",
+      "upstream": "Characters/Head/Head 01 - Feminine/Peach/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Head/Head%2001%20-%20Feminine/Peach/Idle.png",
+      "sha256": "0a40bf47264969f9852e2acb5313dde2fb7f781affb6a08f6945bf0ee58597a1"
+    },
+    {
+      "file": "characters/head-walk.png",
+      "upstream": "Characters/Head/Head 01 - Feminine/Peach/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Head/Head%2001%20-%20Feminine/Peach/Walk.png",
+      "sha256": "3f7e3c92e1224313602b7db1007f55817479b266f53e028dc0c08a48aa0d0dc2"
+    },
+    {
+      "file": "characters/pants-idle.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Legs/Pants 03 - Pants/Navy/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Legs/Pants%2003%20-%20Pants/Navy/Idle.png",
+      "sha256": "b4764021a9ff86f0b327598bbc321fb359b709db384281f9fab48e3574e5a350"
+    },
+    {
+      "file": "characters/pants-walk.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Legs/Pants 03 - Pants/Navy/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Legs/Pants%2003%20-%20Pants/Navy/Walk.png",
+      "sha256": "4dd00aa351062045c783c41944fc992a52fc3a1094ee529019115bf765be69c5"
+    },
+    {
+      "file": "characters/shoes-idle.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Feet/Shoes 01 - Shoes/Leather/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Feet/Shoes%2001%20-%20Shoes/Leather/Idle.png",
+      "sha256": "fc519c9576b56865cc3d5db6e562fd373476d99112b6dec8e966da2376b24849"
+    },
+    {
+      "file": "characters/shoes-walk.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Feet/Shoes 01 - Shoes/Leather/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Feet/Shoes%2001%20-%20Shoes/Leather/Walk.png",
+      "sha256": "602c0a6fa8649c4648ecefd7eec8868c4794b052ca07f56839302d8e7e25798e"
+    },
+    {
+      "file": "characters/shirt-idle.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Torso/Shirt 01 - Longsleeve Shirt/Linen/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Torso/Shirt%2001%20-%20Longsleeve%20Shirt/Linen/Idle.png",
+      "sha256": "750cf03bf31b495c3af2367aa15db272c431e9d59f12a745ce71d8b3984875f1"
+    },
+    {
+      "file": "characters/shirt-walk.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Torso/Shirt 01 - Longsleeve Shirt/Linen/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Torso/Shirt%2001%20-%20Longsleeve%20Shirt/Linen/Walk.png",
+      "sha256": "6aa3a2dee64c354a9ef63d0972b2e7636f0d40e7406e84581fa01c03c3e9aacd"
+    },
+    {
+      "file": "characters/player-cardigan-idle.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Torso 2/Sweater 01 - Cardigan/Denim/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Torso%202/Sweater%2001%20-%20Cardigan/Denim/Idle.png",
+      "sha256": "b2255c434594f45702f6bb7150efd014de7a5f18bfe0f4b0ff803395bf3f5d0d"
+    },
+    {
+      "file": "characters/player-cardigan-walk.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Torso 2/Sweater 01 - Cardigan/Denim/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Torso%202/Sweater%2001%20-%20Cardigan/Denim/Walk.png",
+      "sha256": "41a25cc421a0e48b43a2c8f5154eb63bb151e3834bf0ed6bc3fd35962e754619"
+    },
+    {
+      "file": "characters/companion-cardigan-idle.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Torso 2/Sweater 01 - Cardigan/Mauve/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Torso%202/Sweater%2001%20-%20Cardigan/Mauve/Idle.png",
+      "sha256": "b4d71480e0b902d6803e4dc3235e1d5c4eb95e6edb5dec48f1b98f405dec9fd0"
+    },
+    {
+      "file": "characters/companion-cardigan-walk.png",
+      "upstream": "Characters/Clothing/Feminine, Thin/Torso 2/Sweater 01 - Cardigan/Mauve/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Feminine%2C%20Thin/Torso%202/Sweater%2001%20-%20Cardigan/Mauve/Walk.png",
+      "sha256": "824084253cdafae78760148b284c3fd9590298e34f9f130b4381b6910c34561e"
+    },
+    {
+      "file": "characters/player-hair-idle.png",
+      "upstream": "Characters/Hair/Short 02 - Parted/Raven/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Hair/Short%2002%20-%20Parted/Raven/Idle.png",
+      "sha256": "c37dc64a7122a1c4b9ef4dbc0afa45d711889be791f1725749f303dcd5e9ad6f"
+    },
+    {
+      "file": "characters/player-hair-walk.png",
+      "upstream": "Characters/Hair/Short 02 - Parted/Raven/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Hair/Short%2002%20-%20Parted/Raven/Walk.png",
+      "sha256": "72ecd33232dca24b51adb2f9e09430d7fc8c2a72b02c082325e7fa7e984f5b5c"
+    },
+    {
+      "file": "characters/companion-hair-idle.png",
+      "upstream": "Characters/Hair/Medium 08 - Bob, Bangs/Brown/Idle.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Hair/Medium%2008%20-%20Bob%2C%20Bangs/Brown/Idle.png",
+      "sha256": "333a2972daa6940e60889b347835a9de3cc3539853e17a8b5b34101fa5d1fc95"
+    },
+    {
+      "file": "characters/companion-hair-walk.png",
+      "upstream": "Characters/Hair/Medium 08 - Bob, Bangs/Brown/Walk.png",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Hair/Medium%2008%20-%20Bob%2C%20Bangs/Brown/Walk.png",
+      "sha256": "cfea4126e5c457d0190f4f108f8f4c3c8cb7014539ab3188d35025004d1a6b2e"
+    },
+    {
+      "file": "characters/Clothing-credits.txt",
+      "upstream": "Characters/Clothing/Credits.txt",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Clothing/Credits.txt",
+      "sha256": "3000ec257c41722e703d88313e092545d5b7c8e51f9618c8b4622fb6a8aaf750"
+    },
+    {
+      "file": "characters/Hair-credits.txt",
+      "upstream": "Characters/Hair/Credits.txt",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Hair/Credits.txt",
+      "sha256": "4ee8559427d19931a39341539ccc44fca512806928534c985d29de62585e981a"
+    },
+    {
+      "file": "characters/Characters-credits.txt",
+      "upstream": "Characters/Credits.txt",
+      "download": "https://raw.githubusercontent.com/ElizaWy/LPC/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/Credits.txt",
+      "sha256": "00db8d30dca94253a963158b3c252229b098e4feb87663bb30a432462fe3352a"
+    }
+  ]
+}
