@@ -2,9 +2,9 @@
 
 현재 플레이어는 `explorer-walk-v2.png`의 익명 성인 초대 손님이다. 같은 코트·목도리·가방을 유지하고 교대 보행과 통과 자세를 보완했다. imagegen 내장 편집 도구로 만든 투명 PNG이며, 16개 프레임의 알파 462,803픽셀과 머리·발 경계를 검사했다. 최종 프롬프트는 소스 저장소의 `docs/PLAYER-WALK-V2.md`에 있다. 기존 `explorer-atlas.png`는 보존하지만 부팅 시 요청하지 않는다.
 
-추격자와 먼저 온 손님, 마지막에 낡은 초대 리본을 찬 플레이어는 `party-guest-v1.png`를 사용한다. 카메라 괴물이 아닌, 지친 성인 손님이 빈손으로 경고하는 모습이다. 모든 인물은 창작 캐릭터이며 실제 방송인이나 피해자의 외모를 참조하지 않았다.
+추격자는 외부 작가 Clint Bellanger의 [Zombie Sprites](https://opengameart.org/content/zombie-sprites)를 사용한다(CC BY 3.0). 원본 `authored/pursuer/clint-zombie.png`는 수정하지 않았다. 게임에서 네 방향별 보행 8프레임과 대기 1프레임을 선택하고 하나의 축척으로 정렬한다. 가로로 뻗은 팔과 원본 그림자를 보존하는 160×144 셀을 사용하되 인체 높이와 발 접점은 기존 방 비율에 맞춘다. 별도의 타원 그림자를 중복해서 그리지 않는다. 출처와 적용 방식은 `authored/pursuer/LICENSE.txt`에 있다.
 
-새 아틀라스는 imagegen 내장 도구로 생성한 투명 PNG 1024×1536, 2,187,467바이트다. 4방향 × 4걸음 16프레임의 원본 알파 471,363픽셀을 보존하고, 머리와 발이 잘리지 않는 정렬을 검사했다. 원본을 직접 덧그리거나 픽셀 수정하지 않았다. 소스 저장소의 `docs/PARTY-GUEST-ART.md`에 최종 프롬프트와 생성 경로를 기록했다.
+동행 손님과 결말의 플레이어는 기존 `party-guest-v1.png`를 유지한다. 이 파일과 플레이어는 기존 생성 이미지이므로 게임 전체가 외부 작가의 어셋으로 교체되었다는 뜻은 아니다. 모든 인물은 창작 캐릭터이며 실제 인물의 외모를 참조하지 않았다.
 
 `presence-atlas.png`와 `unattended-operator-v1.png`는 이전 원본으로 보존하지만 현재 부팅 시 요청하지 않는다. 이전 방송실 제목 이미지도 부팅 시 내려받지 않고, 배식대·접시·열쇠·축배를 사용하는 코드 기반 정적 제목 그림으로 대체했다.
 
@@ -16,7 +16,7 @@
 | 파일 | 용도 |
 |------|------|
 | `public/assets/char_player.png` | 익명 플레이어의 선택 교체 파일 |
-| `public/assets/party-guest-v1.png` | 별도 추적자 기본 아틀라스 |
+| `public/assets/authored/pursuer/clint-zombie.png` | 추적자 원본(8방향 × 36프레임) |
 
 그리고 `src/config/constants.ts`에서 `USE_EXTERNAL_CHARACTER_SHEETS = true`로 바꾼 뒤
 `npm run dev` (또는 `build:web`)를 다시 실행하면 적용됩니다.

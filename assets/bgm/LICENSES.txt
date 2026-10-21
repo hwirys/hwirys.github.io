@@ -138,3 +138,13 @@ Japanese Free Music Sites:
 3. Sound Effect Lab - https://soundeffect-lab.info
    License: Free for commercial use, no credit required
    Categories: Battle, Anime, Voice, Daily Life, Machinery, Environmental, UI, Nature
+
+
+=== BIRTHDAY PREPARATION OPENING (2026-10-21) ===
+party_happy_clappy.wav
+Track: Happy Clappy Loop
+Author: OwlishMedia
+License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://opengameart.org/content/happy-clappy-loop
+Original: https://opengameart.org/sites/default/files/HappyClappyLoop.wav
+Changes: none. Original WAV looped and mixed at runtime.

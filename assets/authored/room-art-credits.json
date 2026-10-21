@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-21",
+  "tabletop": {
+    "author": "Jetrel",
+    "pack": "RPG item set",
+    "source": "https://opengameart.org/content/rpg-item-set",
+    "download": "https://opengameart.org/sites/default/files/props_0.png",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Source PNG unchanged. Runtime source frames, scaling and muted room lighting; selected objects arranged on existing furniture."
+  },
+  "pursuer": {
+    "author": "Clint Bellanger",
+    "pack": "Zombie Sprites",
+    "source": "https://opengameart.org/content/zombie-sprites",
+    "download": "https://opengameart.org/sites/default/files/zombie_0.png",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "changes": "Original PNG unchanged. Runtime selects cardinal directions, one idle plus eight lurch frames; shared scale and foot anchor. Original shadow retained."
+  },
+  "files": [
+    {
+      "file": "room-props/jetrel-props.png",
+      "bytes": 13410,
+      "sha256": "f94a97011632cb73ed71f59d8e6d2d3373deca89342d77fbd2e2418a4a68d1a8"
+    },
+    {
+      "file": "pursuer/clint-zombie.png",
+      "bytes": 720677,
+      "sha256": "48f2c46e6da361837ae311b68191d31a8784d681dd4497bdb69b31f6dbb068f2"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Zombie Sprites — Clint Bellanger
+Source: https://opengameart.org/content/zombie-sprites
+Original download: https://opengameart.org/sites/default/files/zombie_0.png
+License: Creative Commons Attribution 3.0
+https://creativecommons.org/licenses/by/3.0/
+
+Original PNG retained unchanged. Game runtime selects four cardinal directions,
+one idle and eight lurch frames per direction, and aligns them at a shared
+scale and foot anchor. No generated imagery. The source includes its own shadow.
