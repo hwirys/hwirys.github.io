@@ -1,0 +1,471 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "9bf06be193b053db256b2536824af426de046aa2",
+  "files": [
+    {
+      "file": "body.png",
+      "upstream": "spritesheets/body/bodies/male/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/body/bodies/male/walk.png",
+      "sha256": "1e0e8f0c11ba5f4f7b3d4439fc416802b4227da2fe146c13de3de254d9f87f77",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "body/bodies/male",
+          "notes": "see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)",
+          "authors": [
+            "bluecarrot16",
+            "JaidynReiman",
+            "Benjamin K. Smith (BenCreating)",
+            "Evert",
+            "Eliza Wyatt (ElizaWy)",
+            "TheraHedwig",
+            "MuffinElZangano",
+            "Durrani",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+            "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle",
+            "https://opengameart.org/content/lpc-revised-character-basics",
+            "https://opengameart.org/content/lpc-be-seated",
+            "https://opengameart.org/content/lpc-runcycle-for-male-muscular-and-pregnant-character-bases-with-modular-heads",
+            "https://opengameart.org/content/lpc-jump-expanded",
+            "https://opengameart.org/content/lpc-character-bases"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "head.png",
+      "upstream": "spritesheets/head/heads/human/male/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/head/heads/human/male/walk.png",
+      "sha256": "7e863954dc8c3c748d0727415c39888106bdd3779beb2e3b18011a3a9ef3e53c",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "head/heads/human/male",
+          "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+          "authors": [
+            "bluecarrot16",
+            "Benjamin K. Smith (BenCreating)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/lpc-character-bases"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "face.png",
+      "upstream": "spritesheets/head/faces/male/neutral/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/head/faces/male/neutral/walk.png",
+      "sha256": "fdf6a898252038e61c3d0b582795df87b04afb4738c6ca1eefda2e317b16fe25",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "head/faces",
+          "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/male/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        }
+      ],
+      "selectedLicense": "OGA-BY 3.0"
+    },
+    {
+      "file": "pants.png",
+      "upstream": "spritesheets/legs/pants/male/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/legs/pants/male/walk.png",
+      "sha256": "2de5a3247743ffa37febdf3464cc0a83e79f64d1028aed410832ee29bea850b6",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "legs/pants/male",
+          "notes": "original male pants by wulax, recolors and edits to v3 base by bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman based on ElizaWy's LPC Revised",
+          "authors": [
+            "bluecarrot16",
+            "JaidynReiman",
+            "ElizaWy",
+            "Matthew Krohn (makrohn)",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0",
+            "CC-BY-SA 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "boots.png",
+      "upstream": "spritesheets/feet/boots/basic/male/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/feet/boots/basic/male/walk.png",
+      "sha256": "13521e96fe8c6033c54622a8137cc1a05964a9db3bd1f5a115028951e5cecf18",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "feet/boots/basic",
+          "notes": "original by Nila122, edited for male and v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-clothes-and-hair",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "shirt.png",
+      "upstream": "spritesheets/torso/clothes/longsleeve/longsleeve/male/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/torso/clothes/longsleeve/longsleeve/male/walk.png",
+      "sha256": "8b1c79d535d7a233371c9398ca51b196aa8fdf06117bd0eafd7fbcbf438d711b",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "torso/clothes/longsleeve/longsleeve/male",
+          "notes": "original by wulax; tweaks and further recolors by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "apron.png",
+      "upstream": "spritesheets/torso/aprons/apron/male/walk/white.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/torso/aprons/apron/male/walk/white.png",
+      "sha256": "e2e568f0336731fe3b163a2ade12a45d6aa702dcdcdf09e58bfba25f6565464d",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "torso/aprons/apron",
+          "notes": "",
+          "authors": [
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-aprons"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "coat-dark.png",
+      "upstream": "spritesheets/torso/jacket/trench/male/walk/dark_gray.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/torso/jacket/trench/male/walk/dark_gray.png",
+      "sha256": "1ca33789a6fbab8492751b3bd3ef7a3c03eb1ed3a803512dd36e9ef344d918a2",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "torso/jacket/trench",
+          "notes": "",
+          "authors": [
+            "bluecarrot16"
+          ],
+          "licenses": [
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-gentleman"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "coat-gray.png",
+      "upstream": "spritesheets/torso/jacket/trench/male/walk/gray.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/torso/jacket/trench/male/walk/gray.png",
+      "sha256": "52a1cd64c7d9cbe344e7b9bf5a160124ca1dcaaa357f63315f933a8defee061a",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "torso/jacket/trench",
+          "notes": "",
+          "authors": [
+            "bluecarrot16"
+          ],
+          "licenses": [
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-gentleman"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "hood-sack.png",
+      "upstream": "spritesheets/hat/cloth/hood_sack/adult/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/hat/cloth/hood_sack/adult/walk.png",
+      "sha256": "a202d9567e7c965229ae8cbea9531129855d44f4ccd94784a820736d637ee165",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "hat/cloth/hood_sack/adult",
+          "notes": "original by Nila122, adapted to human heads by JaidynReiman",
+          "authors": [
+            "Nila122",
+            "JaidynReiman"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-lizard-headgear",
+            "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "hood.png",
+      "upstream": "spritesheets/hat/cloth/hood/adult/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/hat/cloth/hood/adult/walk.png",
+      "sha256": "9fdab38441d1489abfcabfaf87a80ac902179cd1a56efa8d3104344e0f710acb",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "hat/cloth/hood",
+          "notes": "Brown hood by Wulax, original black/white recolors by ??, mapped to idle/run/jump/revised combat by JaidynReiman, along with additional recolors.",
+          "authors": [
+            "Johannes Sjölund (wulax)",
+            "JaidynReiman"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "mask-pale.png",
+      "upstream": "spritesheets/facial/masks/plain/adult/walk/ceramic.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/facial/masks/plain/adult/walk/ceramic.png",
+      "sha256": "5693bdd30f557f0720c2eacb450b3f4a469a32d18f81f669a425768d5cd088da",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "facial/masks/plain",
+          "notes": "",
+          "authors": [
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-masks",
+            "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "mask-dark.png",
+      "upstream": "spritesheets/facial/masks/plain/adult/walk/black.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/facial/masks/plain/adult/walk/black.png",
+      "sha256": "11c7ee60c7180e19eda1ea3d06b2ae21006c5588e6ed70e976d75e4314c3fada",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "facial/masks/plain",
+          "notes": "",
+          "authors": [
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-masks",
+            "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    },
+    {
+      "file": "scarf.png",
+      "upstream": "spritesheets/neck/scarf/walk.png",
+      "download": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/9bf06be193b053db256b2536824af426de046aa2/spritesheets/neck/scarf/walk.png",
+      "sha256": "aff4cd6233d0b3d3821272fb7834783bd9382220fa80880d8212d56659ef5ca3",
+      "size": [
+        576,
+        256
+      ],
+      "credits": [
+        {
+          "file": "neck/scarf",
+          "notes": "Original by Nila122, climb/sit/emote/jump/run animations by JaidynReiman",
+          "authors": [
+            "Nila122",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-SA 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/more-lpc-clothes-and-hair"
+          ]
+        }
+      ],
+      "selectedLicense": "CC-BY-SA 3.0"
+    }
+  ],
+  "adaptationLicense": "CC-BY-SA 3.0",
+  "adaptations": "Layer composition, authored cloth palette swaps, solid mask lining, head layers scaled together to 85% around the neck, frame arrangement and uniform atlas scaling; original PNGs unchanged.",
+  "palette": {
+    "file": "cloth-palettes.json",
+    "upstream": "palette_definitions/cloth/cloth_ulpc.json",
+    "sha256": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411"
+  }
+}
