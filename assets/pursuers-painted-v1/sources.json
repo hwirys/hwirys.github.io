@@ -1,0 +1,54 @@
+{
+  "kind": "AI-generated artwork",
+  "tool": "imagegen built-in",
+  "styleReference": {
+    "file": "assets/explorer-walk-v2.png",
+    "sha256": "0c07828ccc5a20919c456fb6cb938acf74ca45a3fd44f53c2c4bf3193fb00180"
+  },
+  "files": [
+    {
+      "file": "collector.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "3a675ac1496015d5909f32c440f9f8e33c5ddc3b128d93c71bedf683c7bd543a"
+    },
+    {
+      "file": "collector-nw.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "a59dfb0d8a9873c7fee8c17e2b4a377973928412d9ad4cded3ee9f35e40fe32d"
+    },
+    {
+      "file": "warden.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "44aab345d7915b2c818eb378964b080dc48df44087c86b8967f4296ac181c036"
+    },
+    {
+      "file": "usher.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "0ec21cafdc2d1ad0d91a122e7b7a2b998235f71fed0a10bd3007b81e761ad63f"
+    }
+  ],
+  "directionOrder": [
+    "down",
+    "left",
+    "right",
+    "up",
+    "down-left",
+    "down-right",
+    "up-left",
+    "up-right"
+  ],
+  "animation": "8 views × (1 idle + 4 walk drawings) × 3 roles = 120 frames; collector NW is a separately generated strip.",
+  "rendering": "Original RGBA PNGs retained. Runtime alpha-based frame selection, proportional sizing to the protagonist, torso centering and common foot plane. No bitmap rotation or procedural replacement artwork."
+}
