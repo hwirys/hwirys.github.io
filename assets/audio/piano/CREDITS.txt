@@ -1,0 +1,17 @@
+Salamander Grand Piano V3 — recordings by Alexander Holm.
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0).
+Original library: https://github.com/sfzinstruments/SalamanderGrandPiano
+License: https://creativecommons.org/licenses/by/3.0/
+MP3 distribution: https://github.com/Tonejs/audio/tree/master/salamander
+Downloaded from https://tonejs.github.io/audio/salamander/ on 2026-10-25.
+The ten MP3 recordings are bundled unchanged. The game selects nearby recorded
+pitches, adjusts playback rate/gain and note releases, and schedules an original
+simple piano accompaniment. No endorsement by the sample author is implied.
+
+Melody: Happy Birthday to You, composed by Mildred J. Hill.
+This game uses its own score data and accompaniment, not a third-party recording
+of the song or a copied piano arrangement. The familiar 3/4 melody was checked
+against the primary teaching score at:
+https://soundreasonstudio.com/MuseScore-Library-msv3-041119/Repertoire/Happy_Birthday_To_You_Piano-msv3.pdf
+Equal eighth-note pickups; third phrase A is one beat (not two). 96 quarter
+notes/minute. The final four phrases each occupy six beats.

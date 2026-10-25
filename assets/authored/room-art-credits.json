@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-25",
   "tabletop": {
     "author": "Jetrel",
     "pack": "RPG item set",
@@ -178,6 +178,66 @@
       "file": "characters/sources.json",
       "bytes": 8729,
       "sha256": "8e8828de1c45a1fea0f8a83cc42e818a287d4c6d0e455827e9c31fdd68c3633c"
+    },
+    {
+      "file": "interiors/CREDITS-floors.txt",
+      "bytes": 3381,
+      "sha256": "841d1d918be5e6ec7904c8de08d44cd563974705cc688ea947139efabf3ad5b1"
+    },
+    {
+      "file": "interiors/CREDITS-house-interior.txt",
+      "bytes": 2275,
+      "sha256": "848f58840a89a5b94a861fc3ee3fb9f9f173029563e18197319529a36f29ba0e"
+    },
+    {
+      "file": "interiors/CREDITS-room-additions.txt",
+      "bytes": 3373,
+      "sha256": "5314ee31a03a501fb3408cef029532176de8c3f0c374d07eceab541b858ee450"
+    },
+    {
+      "file": "interiors/CREDITS-walls.txt",
+      "bytes": 4016,
+      "sha256": "29566fa6f4240c9e5d261c9a79b0b23a28d59110760a2c62f03ce0df99bd7380"
+    },
+    {
+      "file": "interiors/CREDITS-windows-doors.txt",
+      "bytes": 1179,
+      "sha256": "6c875a18b664b163073b3da048646855869bcb3419cdee20fb84b9f747446fac"
+    },
+    {
+      "file": "interiors/floors.png",
+      "bytes": 285374,
+      "sha256": "02c0a5bdf0c881148a9f65f4c82b63c9bb0ddca2c1546470aac897118e9cc030"
+    },
+    {
+      "file": "interiors/house-inside.png",
+      "bytes": 39601,
+      "sha256": "d703c86057bf32420bc52db28061e7d990a024d5090ed88195eed97dd97a48d2"
+    },
+    {
+      "file": "interiors/house-interior.png",
+      "bytes": 54628,
+      "sha256": "75da3be7ff3bfa993b04d6f4bda1b73e87ead9d98eaa4e94e113662519987a53"
+    },
+    {
+      "file": "interiors/toilets.png",
+      "bytes": 5556,
+      "sha256": "ebbfcb22ad98284a83e268cab4004bada61d25287e5fb0de0a52689ed5840e5e"
+    },
+    {
+      "file": "interiors/upholstery.png",
+      "bytes": 33409,
+      "sha256": "3e1f3b7566506a0379ee6094fb3cf089df06b7ba51045d9d18a41a1cfe086a41"
+    },
+    {
+      "file": "interiors/walls.png",
+      "bytes": 579147,
+      "sha256": "6b55f7b5be42da1614cbf0983e62ce1a0b2010171a0bd5b99dbd0e44803678b8"
+    },
+    {
+      "file": "interiors/windows-doors.png",
+      "bytes": 123084,
+      "sha256": "6d1838535ae1470e5c481002954ed04cacddab669402b33d16e693f18c7950cd"
     }
   ],
   "interiors": {
@@ -200,6 +260,56 @@
       "license": "CC BY-SA 4.0 (CC BY-SA 3.0 upstream contributions)",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "changes": "White fabric flag frame selected, scaled, and typeset into a birthday letter garland. Original sheet unchanged."
+    },
+    "allRooms": {
+      "rooms": 21,
+      "fixtures": 80,
+      "notice": "interiors/CREDITS-room-additions.txt",
+      "sources": [
+        {
+          "pack": "LPC Floors",
+          "source": "https://opengameart.org/content/lpc-floors",
+          "file": "interiors/floors.png",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "pack": "LPC Walls",
+          "source": "https://opengameart.org/content/lpc-walls",
+          "file": "interiors/walls.png",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "pack": "LPC Windows & Doors",
+          "source": "https://opengameart.org/content/lpc-windows-doors",
+          "file": "interiors/windows-doors.png",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "pack": "LPC Upholstery",
+          "source": "https://opengameart.org/content/lpc-upholstery",
+          "file": "interiors/upholstery.png",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "pack": "Public Toilet Tileset",
+          "source": "https://opengameart.org/content/public-toilet-tileset",
+          "file": "interiors/toilets.png",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "pack": "LPC House Insides",
+          "source": "https://opengameart.org/content/lpc-house-insides",
+          "file": "interiors/house-inside.png",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "pack": "LPC House interior and decorations",
+          "source": "https://opengameart.org/content/lpc-house-interior-and-decorations",
+          "file": "interiors/house-interior.png",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "changes": "Original PNGs unchanged; runtime crops, modular furniture, floor and wall repetition, colour adjustments and prop placement. Cloth figurine uses original sculpture and linen frames. Animated dishes, wheel, latch and shutter reuse the same sources. Visual adaptations: CC BY-SA 4.0."
     }
   },
   "guests": {
