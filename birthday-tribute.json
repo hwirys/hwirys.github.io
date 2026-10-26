@@ -1,6 +1,21 @@
 {
   "version": 1,
   "message": "10월 30일, 쿠로네 언니의 생일을 함께 축하해요!",
-  "advertisements": [],
-  "supporters": []
+  "advertisements": [
+    {
+      "video": "assets/birthday/subway-ad-final.mp4",
+      "image": "assets/birthday/subway-ad-final-poster.jpg",
+      "alt": "쿠로네 언니의 생일을 축하하는 지하철 광고 영상",
+      "title": "생일 축하 지하철 광고"
+    }
+  ],
+  "supporters": [
+    "흐트",
+    "BH",
+    "Orangemarmalade",
+    "앗시원해요",
+    "JackSprout",
+    "1lSu2w",
+    "묘소"
+  ]
 }
