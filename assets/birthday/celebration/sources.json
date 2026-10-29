@@ -1,0 +1,15 @@
+{
+  "artist": "Microsoft Corporation",
+  "project": "Fluent Emoji",
+  "license": "MIT",
+  "licenseFile": "LICENSE-Microsoft-Fluent-Emoji.txt",
+  "revision": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+  "files": [
+    {
+      "file": "pink-ribbon.png",
+      "source": "https://raw.githubusercontent.com/microsoft/fluentui-emoji/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Ribbon/3D/ribbon_3d.png",
+      "sha256": "c2612db2b5070992a67c56667e8b80e8344112c28ef668cbd554962b5bb63b42",
+      "modifications": "Original PNG bytes unchanged. CSS adjusts scale, rotation and pink display tones."
+    }
+  ]
+}

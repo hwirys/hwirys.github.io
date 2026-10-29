@@ -10,29 +10,8 @@
   <link rel="preload" as="image" href="/assets/stationery/envelope-ginger-v3.png" />
   <link rel="preload" href="/fonts/gowun-dodum-korean.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/pretendard-variable.woff2" as="font" type="font/woff2" crossorigin />
-  <title>쿠로네 언니의 생일 파티에 초대합니다</title>
+  <title>쿠로네 언니의 생일을 기다리며 · 10월 30일</title>
   <meta name="description" content="10월 30일, 쿠로네 언니의 생일을 함께 축하해요. 반죽이들을 위한 특별한 초대장." />
-  <script>
-    // Apply the remembered cover before the engine and character art download.
-    // Read-only; the canonical state machine lives in InvitationMemory.ts.
-    try {
-      const memory = JSON.parse(localStorage.getItem('kurone_invitation_memory_v1') || 'null');
-      let cozy = false;
-      try {
-        const appearance = JSON.parse(localStorage.getItem('kurone_invitation_appearance_v1') || 'null');
-        cozy = appearance?.version === 1 && appearance?.cozy === true;
-      } catch { /* Invalid preferences do not hide the remembered cover. */ }
-      const ended = ['kurone_party_ending_archive', 'kurone_ending_archive'].some(key => {
-        try { const rows = JSON.parse(localStorage.getItem(key) || 'null');
-          return Array.isArray(rows) && rows.some(row => row && ['bad','normal','true','steward','reverie'].includes(row.id) && row.unlocked !== false);
-        } catch { return false; }
-      });
-      if (!cozy && location.hash !== '#birthday' && (ended || (memory && memory.version === 1 && memory.stage === 3))) {
-        document.documentElement.dataset.endedInvitation = 'true';
-        document.title = '30번 손님 — 언니의 오리고기 파티';
-      }
-    } catch { /* Invitation still opens when storage is unavailable. */ }
-  </script>
   <style>
     @font-face { font-family:'Pretendard Variable'; src:url('/fonts/pretendard-variable.woff2') format('woff2'); font-weight:45 920; font-style:normal; font-display:swap; }
     @font-face { font-family:'Gowun Dodum'; src:url('/fonts/gowun-dodum-korean.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
@@ -198,12 +177,12 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-BGlPtY5m.js"></script>
+  <script type="module" crossorigin src="/assets/main-CICos4M8.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-R6nuOHjY.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-DEQBN3Az.css">
 </head>
 <body>
   <div id="game-container"></div>
-  <div id="invitation-loading" role="status"><img class="birthday-loading" src="/assets/stationery/cake-ginger-v3.png" alt="" width="140" height="140"><p class="birthday-loading">쿠로네 언니 생일 축하해</p><small class="birthday-loading">10월 30일</small><p class="ended-loading">쿠로네 언니 생일 축하해</p><small class="ended-loading">저장된 기록을 준비하고 있습니다.</small></div>
+  <div id="invitation-loading" role="status"><img class="birthday-loading" src="/assets/stationery/cake-ginger-v3.png" alt="" width="140" height="140"><p class="birthday-loading">쿠로네 언니 생일 축하해</p><small class="birthday-loading">2026. 10. 30. 00:00 JST</small><p class="ended-loading">쿠로네 언니 생일 축하해</p><small class="ended-loading">저장된 기록을 준비하고 있습니다.</small></div>
 </body>
 </html>
