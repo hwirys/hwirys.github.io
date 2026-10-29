@@ -1,0 +1,27 @@
+{
+  "family": "Recursive",
+  "authors": "The Recursive Project Authors / Arrow Type",
+  "license": "SIL Open Font License 1.1",
+  "licenseFile": "Recursive-OFL.txt",
+  "source": "https://github.com/arrowtype/recursive",
+  "downloadUrl": "https://fonts.gstatic.com/l/font?kit=8vIk7wMr0mhh-RQChyHEH06JlTRq_gukbYr6Mk1QmnhkyU8G_X-dm13UKVK2ncG92RcQHfPyjA&skey=5d77578da71cb6b7&v=v44",
+  "cssRequest": "https://fonts.googleapis.com/css2?family=Recursive:CASL,MONO,wght@0..1,0..1,300..1000&text=0123456789%3A",
+  "file": "birthday-countdown-recursive.woff2",
+  "sha256": "2b0119a25247d64a340adce1c476c03c166f2af4ba3978193ed07d7601cb51f8",
+  "glyphs": "0123456789:",
+  "axes": {
+    "CASL": [
+      0,
+      1
+    ],
+    "MONO": [
+      0,
+      1
+    ],
+    "wght": [
+      300,
+      1000
+    ]
+  },
+  "modifications": "None. Official Google Fonts subset downloaded and served locally."
+}
