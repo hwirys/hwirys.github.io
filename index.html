@@ -10,7 +10,6 @@
   <link rel="preload" as="image" href="/assets/stationery/envelope-ginger-v3.png" />
   <link rel="preload" href="/fonts/gowun-dodum-korean.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/pretendard-variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="/fonts/birthday-countdown-recursive.woff2" as="font" type="font/woff2" crossorigin />
   <title>쿠로네 언니의 생일을 기다리며 · 10월 30일</title>
   <meta name="description" content="10월 30일, 쿠로네 언니의 생일을 함께 축하해요. 반죽이들을 위한 특별한 초대장." />
   <style>
@@ -69,7 +68,7 @@
       cursor: pointer;
     }
     button { font: inherit; }
-    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;justify-items:center;gap:18px;text-align:center;background:#fffdf8;color:#806962;font:14px/1.8 'Gowun Dodum','Apple SD Gothic Neo',sans-serif}
+    #invitation-loading{position:fixed;inset:0;z-index:45;display:grid;place-content:center;justify-items:center;gap:18px;text-align:center;background:#000;color:#bac6c2;font:14px/1.8 'Gowun Dodum','Apple SD Gothic Neo',sans-serif}
     #invitation-loading img{width:140px;height:140px;object-fit:contain}
     #invitation-loading small{font-size:12px;font-weight:400;letter-spacing:.03em;color:#8d505d}
     #invitation-loading .ended-loading{display:none}
@@ -178,12 +177,13 @@
       .reading-tabs { grid-template-columns: 1fr; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/main-BCM36ha9.js"></script>
+  <script type="module" crossorigin src="/assets/main-I6P2wfCS.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/phaser-B61OQUcB.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-DPJMhhBZ.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-CeFHGrXN.css">
 </head>
 <body>
   <div id="game-container"></div>
-  <div id="invitation-loading" role="status"><img class="birthday-loading" src="/assets/stationery/cake-ginger-v3.png" alt="" width="140" height="140"><p class="birthday-loading">쿠로네 언니 생일 축하해</p><small class="birthday-loading">2026. 10. 30. 00:00 JST</small><p class="ended-loading">쿠로네 언니 생일 축하해</p><small class="ended-loading">저장된 기록을 준비하고 있습니다.</small></div>
+  <div id="invitation-loading" role="status"><p id="initial-birthday-clock" style="font:400 clamp(38px,8vw,82px)/1.2 monospace;letter-spacing:.08em">--:--:--</p><small>2026. 10. 30. 00:00 JST</small></div>
+  <script>{const el=document.getElementById('initial-birthday-clock'),target=Date.parse('2026-10-30T00:00:00+09:00');const draw=()=>{const t=Math.max(0,Math.ceil((target-Date.now())/1000));el.textContent=[Math.floor(t/3600),Math.floor(t/60)%60,t%60].map(n=>String(n).padStart(2,'0')).join(':');};draw();const id=setInterval(()=>{if(!el.isConnected)clearInterval(id);else draw();},1000);}</script>
 </body>
 </html>

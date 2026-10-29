@@ -1,0 +1,8 @@
+{
+  "asset": "handdrawn-ribbon-v1.png",
+  "method": "OpenAI built-in image_gen",
+  "styleReference": "assets/stationery/cake-ginger-v3.png",
+  "promptFile": "handdrawn-ribbon-v1-prompt.txt",
+  "sha256": "1a1b6891f2c83d508a77926d039a039de4cd20543c12b86b7782e6cc7f8b9b16",
+  "transparency": "Original generated RGBA alpha preserved; no background removal or repainting."
+}
